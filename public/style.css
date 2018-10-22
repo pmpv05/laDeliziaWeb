@@ -216,6 +216,13 @@ li {
   z-index: 2;
 }
 
+.bg-dish-menu {
+  background-image: url(img/bg-img/tabla-preparacion.jpg);
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+}
+
 .caviar-table-cell {
   display: table-cell;
   vertical-align: middle;
@@ -836,8 +843,19 @@ li {
 .margin2 {
   margin: 2em;
 }
+
+.margin1 {
+  margin: 1em;
+}
 .caviar-dish-menu {
   padding-bottom: 200px;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.caviar-dish-menu50botom {
+  padding-bottom: 50px;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
@@ -875,9 +893,11 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-content: center;
 }
 
 .dish-info .dish-name {
+  color: white;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -940,7 +960,7 @@ li {
 .caviar-dish-menu .row .col-12:first-child .caviar-single-dish:before {
   position: absolute;
   height: 100%;
-  background-image: url(img/core-img/special-dots.png);
+  /* background-image: url(img/core-img/special-dots.png); */
   width: calc(100% - 50px);
   content: "";
   top: -50px;
